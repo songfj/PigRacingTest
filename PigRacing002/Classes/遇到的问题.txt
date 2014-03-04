@@ -1,0 +1,22 @@
+1.使用tinyxml2解析xml。
+此文件不需从网上下载，cocos2dx-2.1.3在cocos2dx/support/tinyxml2下提供了cpp和h文件。使用相关类前，需将tinyxml2.cpp和tinyxml2.h添加[引入]到项目筛选器source下【否则会报错：LNK2019】。在使用cygwin编译时无需在jni/Android.mk里添加tinyxml2.cpp的路径
+
+2.代码中的字符串，尤其是路径，要注意大小写。路径中的斜杠用一个正斜杠
+可能是因为dalvikvm在读取路径是会区分字母大小写，如果文件或文件夹的字母与代码中的路径名不完全匹配，则会抛出异常
+
+3.锚点与定位。
+	节点类型		锚点位置	使用
+	CCNode			(0,0)		是
+	CCScene及子类	(0.5,0.5)	否
+	CCLayer及子类	(0,0)	否
+	CCSprite及子类	(0.5,0.5)	是
+
+4.CCArray的fastRemoveObjectAtIndex()方法与removeObjectAtIndex()区别
+	前者移除元素后，将最后一个元素移动到当前当前索引
+	后者移除元素后，将所有元素前移一个索引
+
+5.再将CCSprite加到一个CCNode前，必须给CCSprite设置一个初始显示帧
+
+6.从vs2012转移到cygwin编译时，需注意以下问题：
+	a.vs中使用枚举时可以带上枚举名，而cygwin需要去掉枚举名。【例：EPigStatus::PIG_AHEAD_NORMAL变为PIG_AHEAD_NORMAL】
+	b.当vs中使用了box2D引擎时，在cygwin编译时，需要修改相应的android.mk文件【例：修改extensions文件夹下的Android.mk，将宏-DCC_ENABLE_CHIPMUNK_INTEGRATION=1替换为-DCC_ENABLE_BOX2D_INTEGRATION=1】

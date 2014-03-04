@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <!--
+      说明：
+            1.质量[Mass]:           [100,200]kg
+            2.动能[Kinetic]:        [0,100]
+            3.一些和长度相关的量，此处设定时单位为像素，但是在Box2D中运算时应该根据PTM_RATIO换算为Box2D所需的M-K-S
+  -->
+  <pig gid="12345678">
+    <path>pigs/000.png</path>
+    <name>pig001</name>
+    <tileSizeWidth>32</tileSizeWidth>
+    <tileSizeHeight>32</tileSizeHeight>
+    <layerSizeWidth>3</layerSizeWidth>
+    <layerSizeHeight>4</layerSizeHeight>
+    <bodySizeWidth>25</bodySizeWidth>
+    <bodySizeHeight>28</bodySizeHeight>
+    
+    <!--kinetic-->
+    <!--96px/s 刚好2个瓦块-->
+    <maxKinetic>128</maxKinetic><!--应满足m_stepTime 走过的像素数，最大不超过一个瓦块的高。经过计算，当maxKinetic=4px，tileSize.height=48px,m_stepTime=0.016时，每秒最大可行进5个瓦块较为合理，所以此值设为：4px*PTM_RATIO[32]=128-->
+    <subKinetic>1</subKinetic>
+    <addKinetic>10</addKinetic>
+    <stopKinetic>20</stopKinetic>
+    <backKinetic>30</backKinetic><!--PIG_HITTED_BACK状态，回归到mainPath时的速度-->
+    <maxTurnKinetic>80</maxTurnKinetic><!--80/PTM_RATIO[32]=2.5px，即：当m_stepTime里行进超过2.5px时，精灵不会恰好转过90°弯角，可能会因离心力过大而偏离轨道-->
+    
+    <!--protential-->
+    <maxProtential>100</maxProtential>
+    <subProtential>1</subProtential>
+    
+    <!--other-->
+    <mass>150</mass><!--150kg-->
+    <minTurnAngle>5</minTurnAngle>
+    <maxDampDistance>144</maxDampDistance><!--3个瓦片高度-->
+    <iq>70</iq>
+  </pig>
+</list>
