@@ -157,7 +157,6 @@
     <ClCompile Include="..\Classes\Util\AssistFunc.cpp" />
     <ClCompile Include="..\Classes\Util\Astar.cpp" />
     <ClCompile Include="..\Classes\Util\AstarItem.cpp" />
-    <ClCompile Include="..\Classes\Util\test.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

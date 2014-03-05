@@ -138,9 +138,6 @@
     <ClCompile Include="..\Classes\Role\ExamplePig.cpp">
       <Filter>source\Role</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Util\test.cpp">
-      <Filter>source\Util</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\Resources\pigs\config.xml">
