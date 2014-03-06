@@ -31,6 +31,9 @@
     <Filter Include="resource\buttons">
       <UniqueIdentifier>{1e827241-8e15-45ab-8614-cf1d4d88f0cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{024e5fc9-c386-458c-ae29-f5ebb16f6156}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\PigRacing004.ico">
@@ -158,5 +161,10 @@
     <Text Include="..\Classes\Util\readme.txt">
       <Filter>source\Util</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Other\note.snippet">
+      <Filter>Other</Filter>
+    </None>
   </ItemGroup>
 </Project>
