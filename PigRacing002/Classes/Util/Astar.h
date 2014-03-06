@@ -1,3 +1,11 @@
+/**
+* Date:2014-3-6 22:55:02
+* Author:
+* Instruction:A–«À„∑® µœ÷
+**/
+
+
+
 #ifndef __ASTAR_H__
 #define __ASTAR_H__
 
