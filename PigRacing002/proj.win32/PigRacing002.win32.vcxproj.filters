@@ -166,8 +166,5 @@
     <None Include="..\Other\note.snippet">
       <Filter>Other</Filter>
     </None>
-    <None Include="..\Other\notes.snippet">
-      <Filter>Other</Filter>
-    </None>
   </ItemGroup>
 </Project>
