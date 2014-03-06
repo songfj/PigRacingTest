@@ -1,3 +1,11 @@
+/**
+* Date:2014-3-6 22:52:32
+* Author:薛凯
+* Instruction:公用常量，宏等
+**/
+
+
+
 #ifndef __PIGRACING_BASIC_H__
 #define __PIGRACING_BASIC_H__
 
