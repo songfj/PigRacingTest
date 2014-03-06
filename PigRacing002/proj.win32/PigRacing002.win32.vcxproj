@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Other\note.snippet" />
+    <None Include="..\Other\notes.snippet" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
