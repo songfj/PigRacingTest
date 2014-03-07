@@ -141,6 +141,9 @@
     <ClCompile Include="..\Classes\Role\SpritePig.cpp">
       <Filter>source\Role</Filter>
     </ClCompile>
+    <ClCompile Include="..\Class\Util\源.cpp">
+      <Filter>source\Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\Resources\pigs\config.xml">
