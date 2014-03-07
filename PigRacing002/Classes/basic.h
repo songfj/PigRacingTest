@@ -4,6 +4,8 @@
 * Instruction:公用常量，宏等
 **/
 
+123123123123
+
 
 
 #ifndef __PIGRACING_BASIC_H__
