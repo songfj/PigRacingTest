@@ -135,7 +135,7 @@
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\basic.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
-    <ClInclude Include="..\Classes\Role\ExamplePig.h" />
+    <ClInclude Include="..\Classes\Role\SpritePig.h" />
     <ClInclude Include="..\Classes\UI\GameMenu.h" />
     <ClInclude Include="..\Classes\UI\GameOver.h" />
     <ClInclude Include="..\Classes\UI\GameStart.h" />
@@ -151,7 +151,7 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\basic.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
-    <ClCompile Include="..\Classes\Role\ExamplePig.cpp" />
+    <ClCompile Include="..\Classes\Role\SpritePig.cpp" />
     <ClCompile Include="..\Classes\UI\GameMenu.cpp" />
     <ClCompile Include="..\Classes\UI\GameOver.cpp" />
     <ClCompile Include="..\Classes\UI\GameStart.cpp" />
